@@ -1,5 +1,5 @@
 name: Bug report
-about: Report a bug in Microcks
+description: Report a bug in Microcks
 labels: kind/bug
 body:
   - type: textarea
