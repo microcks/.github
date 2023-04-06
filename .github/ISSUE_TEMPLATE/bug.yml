@@ -1,0 +1,59 @@
+name: Bug report
+about: Report a bug in Microcks
+labels: kind/bug
+body:
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe the bug
+      description: >-
+        Tell us what you were trying to do and what happened.
+
+        Provide a clear and concise description of what the problem is.
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: >-
+        A clear and concise description of what you expected to happen.
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: >-
+        A clear and concise description of what you actually observe.
+  - type: textarea
+    attributes:
+      label: How to Reproduce?
+      description: >-
+        Steps to reproduce the issue. Attach all resources that can help us understand the issue:
+
+          * Screenshots
+
+          * Link to GitHub repository with project that has issues
+
+          * Files that can help reproduce like your API specification file(s), either paste inside the issue in a code block or in a sharable [gist](https://gist.github.com/)
+
+      placeholder: |
+        Reproducer:
+
+        Resources to reproduce the behavior:
+        1. 
+        2. 
+        3.        
+  - type: markdown
+    attributes:
+      value: |
+        ## Environment
+  - type: input
+    attributes:
+      label:  Quarkus version or git rev
+  - type: input
+    attributes:
+      label:  Install method (`docker-compose`, `helm chart`, `operator`, `docker-desktop extension`,...)
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: >
+        If you have any additional information for us, use the field below.
+
+        Ex: Docker version, Kubernetes version, etc...

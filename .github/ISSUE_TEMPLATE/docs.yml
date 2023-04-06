@@ -1,0 +1,24 @@
+name: Docs enhacement
+description: Report missing or mistakes in docs.
+labels: "component/documentation"
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: Describe the bug
+      description: >-
+        Is there a bug in one of our code snippets? Did we explain a concept incorrectly? Did we forget something?
+        
+        Please share a clear and concise description of what the bug or mistake is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Attach any resources that can help us understand the issue.
+      description: >-
+        Send us screenshots, direct quotes of the text that has issues, a link to the GitHub repository with 
+        project that has issues, etc. Help us reproduce this Docs issue.
+    validations:
+      required: true
