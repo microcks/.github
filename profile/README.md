@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://www.microcks.io"><img src="../assets/microcks-banner.png" alt="Microcks logo"></a>
+  <a href="https://www.microcks.io"><img src="https://github.com/microcks/.github/blob/main/assets/microcks-banner.png" alt="Microcks logo"></a>
 </h1>
 
 [![Project Chat](https://img.shields.io/badge/chat-@microcksio-pink.svg?color=ff69b4&style=for-the-badge&logo=zulip)](https://microcksio.zulipchat.com/)
