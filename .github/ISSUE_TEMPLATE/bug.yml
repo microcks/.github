@@ -46,7 +46,7 @@ body:
         ## Environment
   - type: input
     attributes:
-      label:  Quarkus version or git rev
+      label:  Microcks version or git rev
   - type: input
     attributes:
       label:  Install method (`docker-compose`, `helm chart`, `operator`, `docker-desktop extension`,...)
