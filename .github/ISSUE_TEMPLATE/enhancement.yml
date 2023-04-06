@@ -9,11 +9,8 @@ body:
       label: Reason/Context
       description: >-
         Please try ansmering few of those questions:
-
           * Why we need this improvement?
-
           * How will this change help?
-
           * What is the motivation?
   - type: textarea
     validations:
