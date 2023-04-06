@@ -51,7 +51,7 @@ https://www.youtube.com/@Microcks/videos
 
 To get involved with our community, please make sure you are familiar with the project's [Code of Conduct](https://github.com/microcks/.github/blob/master/CODE_OF_CONDUCT.md).
 
-You should also check out our [contribution guide](https://github.com/microcks/microcks/blob/master/CONTRIBUTING.md).
+You should also check out our [contribution guide](https://github.com/microcks/.github/blob/master/CONTRIBUTING.md).
 
 > **📢 Remember, code isn't the only way to help out! ❤️👇**
 - [Tell us more](https://microcks.io/blog/) about your Microcks use cases and share it with all 🌍🌎🌏
