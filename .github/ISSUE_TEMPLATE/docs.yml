@@ -1,4 +1,4 @@
-name: Docs enhacement
+name: Docs enhancement
 description: Report missing or mistakes in docs.
 labels: "component/documentation"
 body:
@@ -21,4 +21,4 @@ body:
         Send us screenshots, direct quotes of the text that has issues, a link to the GitHub repository with 
         project that has issues, etc. Help us reproduce this Docs issue.
     validations:
-      required: true
+      required: false
