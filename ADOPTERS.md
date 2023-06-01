@@ -18,5 +18,5 @@ This document also lists the organizations that use Microcks based on public inf
 | [Société Générale](https://www.societegenerale.com/en) | [Patrice Lachance](https://github.com/patlachance) | Multi-protocol API Mocking, Testing and Sandbox for cloud-native APIs / applications. Integrated in [Cloud Innovation Platform](https://github.com/societe-generale/cloud-innovation-platform).                         
 | [Société Générale](https://www.societegenerale.com/en) | [Patrice Lachance](https://github.com/patlachance) | Cloud Innovation Platform presentation and Microcks demo 👉 [Red Hat Summit 2019](https://www.redhat.com/files/summit/session-assets/2019/T8B6B4.pdf) ⭐️      
 | [Deloitte](https://www.deloitte.com/global/en.html) | [Madiha Rehman](https://www.linkedin.com/in/madihar/) | Utilised Microcks to create backend mocks for 170+ APIs including REST and SOAP services
-| [sesam-vitale](https://www.sesam-vitale.fr/) | [Vincent Fasciaux](vincent.fasciaux@sesam-vitale.fr) | We use Microcks to replace the SUT's dependencies with test doubles in order to accelerate our API deliveries
+| [sesam-vitale](https://www.sesam-vitale.fr/) | [Vincent Fasciaux](mailto:vincent.fasciaux@sesam-vitale.fr) | We use Microcks to replace the SUT's dependencies with test doubles in order to accelerate our API deliveries
 
