@@ -20,3 +20,4 @@ This document also lists the organizations that use Microcks based on public inf
 | [Deloitte](https://www.deloitte.com/global/en.html) | [Madiha Rehman](https://www.linkedin.com/in/madihar/) | Utilised Microcks to create backend mocks for 170+ APIs including REST and SOAP services
 | [sesam-vitale](https://www.sesam-vitale.fr/) | [Vincent Fasciaux](mailto:vincent.fasciaux@sesam-vitale.fr) | We use Microcks to replace the SUT's dependencies with test doubles in order to accelerate our API deliveries
 
+| [BNP PARIBAS](https://group.bnpparibas/en/) | [Nadji BERRAF](https://www.linkedin.com/in/nadji-berraf-26707148/) | 2 use boxes: 1- Mock legacy platform for bench 2- API First
