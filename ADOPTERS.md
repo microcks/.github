@@ -19,4 +19,4 @@ This document also lists the organizations that use Microcks based on public inf
 | [Société Générale](https://www.societegenerale.com/en) | [Patrice Lachance](https://github.com/patlachance) | Cloud Innovation Platform presentation and Microcks demo 👉 [Red Hat Summit 2019](https://www.redhat.com/files/summit/session-assets/2019/T8B6B4.pdf) ⭐️      
 | [Deloitte](https://www.deloitte.com/global/en.html) | [Madiha Rehman](https://www.linkedin.com/in/madihar/) | Utilised Microcks to create backend mocks for 170+ APIs including REST and SOAP services
 | [sesam-vitale](https://www.sesam-vitale.fr/) | [Vincent Fasciaux](mailto:vincent.fasciaux@sesam-vitale.fr) | We use Microcks to replace the SUT's dependencies with test doubles in order to accelerate our API deliveries
-
+| [BNP PARIBAS](https://group.bnpparibas/en/) | [Nadji BERRAF](https://www.linkedin.com/in/nadji-berraf-26707148/) | We use Microcks since 2022 to mock our legacy core banking systems and mainframe APIs in order to increase agility, accelerate development, and reduce costs. Microcks is also integrated into our API-first strategy for building and delivering new cloud-native services.
