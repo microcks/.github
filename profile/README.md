@@ -19,6 +19,14 @@ As numerous API styles and protocols coexist, requiring the need for a uniform w
 
 The most important aspect is testing your APIs consistently using [OpenAPI](https://www.openapis.org/), [AsyncAPI](https://www.asyncapi.com/), and [Postman Collections](https://www.postman.com/collection/) across web, [gRPC](https://grpc.io/), [WebSockets](https://websockets.spec.whatwg.org/#the-websocket-interface), [GraphQL](https://graphql.org/), [Kafka](https://kafka.apache.org/), [NATS](https://nats.io/), Google [PubSub](https://cloud.google.com/pubsub/docs/overview?hl=en) and other popular patterns and protocols of your API lifecycle.
 
+## 🙌 Join the Microcks Adopters list
+
+📢 If you're using Microcks in your organization, please add your company name to our Adopters list. 🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact.
+
+👉 https://github.com/microcks/.github/blob/main/ADOPTERS.md
+
+If you need to know why and how to add yourself in the list, please read the blog post "[Join the Microcks Adopters list](https://microcks.io/blog/join-adopters-list/) and Empower the vibrant open source Community 🙌"
+
 ## 🌎 Join Microcks community
 
 We are an open community, and it means that you too can jump on board to make Microcks even greater! 
