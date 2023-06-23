@@ -2,7 +2,7 @@
 
 **📢 _If you're using Microcks in your organization, please add your company name to this list. 🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact._**
 
-If you need to know why and how to add yourself in the list, please read the blog post "[Join the Microcks Adopters list](https://microcks.io/blog/join-adopters-list/) and Empower the vibrant open source Community 🙌"
+If you need to know why and how to add yourself to the list, please read the blog post "[Join the Microcks Adopters list](https://microcks.io/blog/join-adopters-list/) and Empower the vibrant open source Community 🙌"
 
 This document also lists the organizations that use Microcks based on public information available in blog posts, events and videos. If any organization would like to get added or removed please edit this file (make a pull request) after following our [contribution guide](https://github.com/microcks/.github/blob/master/CONTRIBUTING.md) and by following these specifics guidelines:
 - Please don't include your organization's logo or other trademarked material
