@@ -25,7 +25,7 @@ The most important aspect is testing your APIs consistently using [OpenAPI](http
 
 👉 https://github.com/microcks/.github/blob/main/ADOPTERS.md
 
-If you need to know why and how to add yourself in the list, please read the blog post "[Join the Microcks Adopters list](https://microcks.io/blog/join-adopters-list/) and Empower the vibrant open source Community 🙌"
+If you need to know why and how to add yourself to the list, please read the blog post "[Join the Microcks Adopters list](https://microcks.io/blog/join-adopters-list/) and Empower the vibrant open source Community 🙌"
 
 ## 🌎 Join Microcks community
 
