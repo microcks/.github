@@ -13,6 +13,8 @@
 
 Welcome to [Microcks](https://microcks.io/), the Open-Source [(OSS)](https://opensource.org/) [Kubernetes](https://kubernetes.io/) Native tool for API Mocking and Testing.
 
+Microcks is a [Cloud Native Computing Sandbox](https://landscape.cncf.io/card-mode?selected=microcks) project 🚀
+
 As numerous API styles and protocols coexist, requiring the need for a uniform way to accelerate and secure their delivery! Our objective is to establish Microcks as the de-facto standard tool for delivering this unified approach [the Open-Source way](https://www.theopensourceway.org/) 🙌
 
 > 💡 **From day one, Microcks had the vision of a multi-protocol API ecosystem due to the ubiquitous nature of API. This is especially true at the enterprise level where the technology strata are built over the years.**
