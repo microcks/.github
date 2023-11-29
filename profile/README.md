@@ -13,13 +13,17 @@
 
 Welcome to [Microcks](https://microcks.io/), the Open-Source [(OSS)](https://opensource.org/) [Kubernetes](https://kubernetes.io/) Native tool for API Mocking and Testing.
 
-Microcks is a [Cloud Native Computing Sandbox](https://landscape.cncf.io/card-mode?selected=microcks) project 🚀
+Microcks is a [Cloud Native Computing Foundation Sandbox](https://landscape.cncf.io/card-mode?selected=microcks) project 🚀
 
 As numerous API styles and protocols coexist, requiring the need for a uniform way to accelerate and secure their delivery! Our objective is to establish Microcks as the de-facto standard tool for delivering this unified approach [the Open-Source way](https://www.theopensourceway.org/) 🙌
 
 > 💡 **From day one, Microcks had the vision of a multi-protocol API ecosystem due to the ubiquitous nature of API. This is especially true at the enterprise level where the technology strata are built over the years.**
 
 The most important aspect is testing your APIs consistently using [OpenAPI](https://www.openapis.org/), [AsyncAPI](https://www.asyncapi.com/), and [Postman Collections](https://www.postman.com/collection/) across web, [gRPC](https://grpc.io/), [WebSockets](https://websockets.spec.whatwg.org/#the-websocket-interface), [GraphQL](https://graphql.org/), [Kafka](https://kafka.apache.org/), [NATS](https://nats.io/), Google [PubSub](https://cloud.google.com/pubsub/docs/overview?hl=en) and other popular patterns and protocols of your API lifecycle.
+
+Kudos to our awesome sponsors and backers. If you'd like to join them, please consider [sponsoring](https://opencollective.com/microcks) Microcks's development:
+
+👉 https://github.com/microcks/.github/blob/main/BACKERS.md
 
 ## 🙌 Join the Microcks Adopters list
 
