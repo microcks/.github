@@ -33,7 +33,7 @@ If you'd like to help and support Microcks to [level up](https://www.cncf.io/pro
 
 ## Bronze Sponsors
 <p align="center">
-  <a href="https://www.devmark.ai/fern/?utm_source=microcks&utm_loc=readme&utm_type=logo"><img src="https://framerusercontent.com/images/iWkZ3Gh94p4Ej7YCByaeYmRUPmw.png" alt="Fern logo" width="50"></a>
+  <a href="https://www.devmark.ai/fern/?utm_source=microcks&utm_loc=readme&utm_type=logo"><img src="https://uploads-ssl.webflow.com/64f77a831b9d50c279dc926c/6568d0303c2a1435c108e114_fern.svg" alt="Fern logo" width="100"></a>
 </p>
 
 [Become a bronze sponsor](https://opencollective.com/microcks/contribute/bronze-sponsors-61338/checkout?interval=month&amount=100&name=&legalName=&email=)
