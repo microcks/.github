@@ -19,7 +19,7 @@ As numerous API styles and protocols coexist, requiring the need for a uniform w
 
 > 💡 **From day one, Microcks had the vision of a multi-protocol API ecosystem due to the ubiquitous nature of API. This is especially true at the enterprise level where the technology strata are built over the years.**
 
-The most important aspect is testing your APIs consistently using [OpenAPI](https://www.openapis.org/), [AsyncAPI](https://www.asyncapi.com/), and [Postman Collections](https://www.postman.com/collection/) across web, [gRPC](https://grpc.io/), [WebSockets](https://websockets.spec.whatwg.org/#the-websocket-interface), [GraphQL](https://graphql.org/), [Kafka](https://kafka.apache.org/), [NATS](https://nats.io/), Google [PubSub](https://cloud.google.com/pubsub/docs/overview?hl=en) and other popular patterns and protocols of your API lifecycle.
+The most important aspect is testing your APIs consistently using [OpenAPI](https://microcks.io/documentation/using/openapi/), [AsyncAPI](https://microcks.io/documentation/using/asyncapi/), [SoapUI](https://microcks.io/documentation/using/soapui/), and [Postman Collections](https://microcks.io/documentation/using/postman/) across web, [gRPC](https://microcks.io/documentation/using/grpc/), [WebSockets](https://websockets.spec.whatwg.org/#the-websocket-interface), [GraphQL](https://microcks.io/documentation/using/graphql/), [Kafka](https://microcks.io/blog/apache-kafka-mocking-testing/), [NATS](https://microcks.io/documentation/guides/nats-support/), [RabbitMQ](https://microcks.io/documentation/guides/rabbitmq-support/), [MQTT](https://microcks.io/documentation/guides/mqtt-support/), Google [PubSub](https://microcks.io/documentation/guides/googlepubsub-support/), Amazon [SQS/SNS](https://microcks.io/documentation/guides/aws-sqs-sns-support/) and other popular patterns and protocols of your API lifecycle.
 
 Kudos to our awesome sponsors and backers. If you'd like to join them, please consider [sponsoring](https://opencollective.com/microcks) Microcks's development:
 
@@ -39,7 +39,7 @@ We are an open community, and it means that you too can jump on board to make Mi
 
 We will be eager to prioritize items according to community feedback: you can check and collaborate via our list of [issues](https://github.com/microcks/microcks/issues) on GitHub.
 
-Come and say hi! on our [Github discussion](https://github.com/microcks/microcks/discussions) or [Zulip](https://microcksio.zulipchat.com/) chat 🐙, simply send some love through [GitHub stars](https://github.com/microcks/microcks) ⭐️ or follow us on [Twitter](https://twitter.com/microcksio), [LinkedIn](https://www.linkedin.com/company/microcks/) and our [YouTube channel](https://www.youtube.com/c/Microcks) !
+Come and say hi! on our [Github discussion](https://github.com/microcks/microcks/discussions) or [Discord](https://microcks.io/discord-invite) chat 💬, simply send some love through [GitHub stars](https://github.com/microcks/microcks) ⭐️ or follow us on [Twitter](https://twitter.com/microcksio), [LinkedIn](https://www.linkedin.com/company/microcks/) and our [YouTube channel](https://www.youtube.com/c/Microcks) !
 
 ## 📑 Getting started
 
