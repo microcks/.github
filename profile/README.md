@@ -3,7 +3,7 @@
   <a href="https://www.microcks.io"><img src="https://github.com/microcks/.github/blob/main/assets/microcks-banner.png" alt="Microcks logo"></a>
 </h1>
 
-[![Project Chat](https://img.shields.io/badge/chat-@microcksio-pink.svg?color=ff69b4&style=for-the-badge&logo=zulip)](https://microcksio.zulipchat.com/)
+[![Project Chat](https://img.shields.io/badge/discord-microcks-pink.svg?color=7289da&style=for-the-badge&logo=discord)](https://microcks.io/discord-invite/)
 [![Twitter](https://img.shields.io/badge/twitter-@microcksio-blue.svg?color=1d9bf0&style=for-the-badge&logo=twitter)](https://twitter.com/microcksio/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-@microcks-blue.svg?color=0077b5&style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/microcks/)
 [![YouTube](https://img.shields.io/badge/youtube-@microcks-blue.svg?color=ff0000&style=for-the-badge&logo=youtube)](https://www.youtube.com/c/microcks/)
