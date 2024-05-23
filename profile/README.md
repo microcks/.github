@@ -9,13 +9,12 @@
 [![YouTube](https://img.shields.io/badge/youtube-@microcks-blue.svg?color=ff0000&style=for-the-badge&logo=youtube)](https://www.youtube.com/c/microcks/)
 [![License](https://img.shields.io/github/license/microcks/microcks?style=for-the-badge&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)
 
-## ✨ Welcome
+## ✨ Welcome to Microcks,
 
-Welcome to [Microcks](https://microcks.io/), the Open-Source [(OSS)](https://opensource.org/) [Kubernetes](https://kubernetes.io/) Native tool for API Mocking and Testing.
+The open source, cloud native tool for API Mocking and Testing.
+[Microcks](https://microcks.io/) is a [Cloud Native Computing Foundation Sandbox](https://landscape.cncf.io/card-mode?selected=microcks) project 🚀
 
-Microcks is a [Cloud Native Computing Foundation Sandbox](https://landscape.cncf.io/card-mode?selected=microcks) project 🚀
-
-As numerous API styles and protocols coexist, requiring the need for a uniform way to accelerate and secure their delivery! Our objective is to establish Microcks as the de-facto standard tool for delivering this unified approach [the Open-Source way](https://www.theopensourceway.org/) 🙌
+As numerous API styles and protocols coexist, requiring the need for a uniform way to accelerate and secure their delivery! Our objective is to establish Microcks as the de-facto standard tool for delivering this unified approach [the open source way](https://www.theopensourceway.org/) 🙌
 
 > 💡 **From day one, Microcks had the vision of a multi-protocol API ecosystem due to the ubiquitous nature of API. This is especially true at the enterprise level where the technology strata are built over the years.**
 
@@ -75,3 +74,7 @@ You should also check out our [contribution guide](https://github.com/microcks/.
 - We Share. We Learn. We Grow 🚀
 
 We can't wait to meet you! 🤗
+
+## ❤️ Sponsors
+
+Thanks to our amazing Sponsors and Backers! Interested in becoming a Sponsor? Check [this](https://github.com/yada/.github/blob/main/BACKERS.md) out and join our [Open Collective](https://opencollective.com/microcks)!
