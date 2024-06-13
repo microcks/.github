@@ -62,6 +62,8 @@ https://www.youtube.com/@Microcks/videos
 
 🙏 First of all, thanks for getting involved! ✨
 
+Follow our [public roadmap](https://github.com/microcks/.github/blob/master/ROADMAP.md) ✨ and feel free to share your suggestions 🙌
+
 To get involved with our community, please make sure you are familiar with the project's [Code of Conduct](https://github.com/microcks/.github/blob/master/CODE_OF_CONDUCT.md).
 
 You should also check out our [contribution guide](https://github.com/microcks/.github/blob/master/CONTRIBUTING.md).
