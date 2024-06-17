@@ -8,6 +8,7 @@
 [![LinkedIn](https://img.shields.io/badge/linkedin-@microcks-blue.svg?color=0077b5&style=for-the-badge&logo=linkedin)](https://www.linkedin.com/company/microcks/)
 [![YouTube](https://img.shields.io/badge/youtube-@microcks-blue.svg?color=ff0000&style=for-the-badge&logo=youtube)](https://www.youtube.com/c/microcks/)
 [![License](https://img.shields.io/github/license/microcks/microcks?style=for-the-badge&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)
+[![CNCF Landscape](https://img.shields.io/badge/CNCF%20Landscape-5699C6?style=for-the-badge&logo=cncf)](https://landscape.cncf.io/?item=app-definition-and-development--application-definition-image-build--microcks)
 
 ## ✨ Welcome to Microcks,
 
