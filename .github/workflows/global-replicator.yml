@@ -1,0 +1,40 @@
+# Thanks to @derberg for the original code: 
+# https://github.com/derberg/manage-files-in-multiple-repositories?tab=readme-ov-file
+
+name: Global workflow to rule replicate files in all repositories
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/**"
+      - "*.md"
+  workflow_dispatch:
+    inputs:
+      repo_name:
+        description: |
+          You can specify the repository's name where workflows should be pushed manually, as long as workflow settings do not ignore the repository.
+          If you do not specify the exact repository name, the workflow will try to replicate all missing changes to all repositories.
+        required: false
+
+jobs:
+  replicate_coc:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Code of Conduct in all repositories
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        #uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@v2
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          patterns_to_include: CODE_OF_CONDUCT.md
+          exclude_private: true
+          exclude_forked: true
+          #repos_to_ignore: shape-up-process,glee-hello-world,saunter
+          committer_username: yada
+          committer_email: yacine@microcks.io
+          commit_message: "ci: update of files from global .github repo"
+          bot_branch_name: bot/update-files-from-global-repo
