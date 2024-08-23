@@ -29,7 +29,7 @@ jobs:
         #uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
         uses: derberg/manage-files-in-multiple-repositories@v2
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           patterns_to_include: CODE_OF_CONDUCT.md
           exclude_private: true
           exclude_forked: true
