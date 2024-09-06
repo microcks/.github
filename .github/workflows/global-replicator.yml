@@ -33,7 +33,7 @@ jobs:
           exclude_private: true
           exclude_forked: true
           #repos_to_ignore: shape-up-process,glee-hello-world,saunter
-          committer_username: yada
+          committer_username: Yacine Kheddache
           committer_email: yacine@microcks.io
           commit_message: |
             ci: update of files from global .github repo 
