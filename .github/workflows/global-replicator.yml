@@ -28,8 +28,8 @@ jobs:
       - name: Replicating file
         uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
         with:
-          patterns_to_include: CODE_OF_CONDUCT.md
           github_token: ${{ secrets.YADA_GH_TOKEN }}
+          patterns_to_include: CODE_OF_CONDUCT.md
           exclude_private: true
           exclude_forked: true
           #repos_to_ignore: shape-up-process,glee-hello-world,saunter
