@@ -38,4 +38,4 @@ jobs:
           commit_message: |
             ci: update of files from global .github repo 
             Signed-off-by: Yacine Kheddache <yacine@microcks.io>
-          bot_branch_name: bot/update-files-from-global-repo
+          #bot_branch_name: bot/update-files-from-global-repo
