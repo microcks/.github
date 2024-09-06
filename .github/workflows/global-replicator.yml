@@ -35,5 +35,7 @@ jobs:
           #repos_to_ignore: shape-up-process,glee-hello-world,saunter
           committer_username: yada
           committer_email: yacine@microcks.io
-          commit_message: "ci: update of files from global .github repo Signed-off-by: Yacine Kheddache <yacine@microcks.io>"
+          commit_message: |
+            ci: update of files from global .github repo 
+            Signed-off-by: Yacine Kheddache <yacine@microcks.io>
           bot_branch_name: bot/update-files-from-global-repo
