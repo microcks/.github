@@ -41,7 +41,7 @@ jobs:
             ci: update of files from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
-  # Replicate .github/AD file in all repositories
+  # Replicate .github/ADOPTERS file in all repositories
   replicate_adopters:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Adopters public list file in all repositories concerned
