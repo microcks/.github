@@ -20,6 +20,18 @@ on:
 # See this issue for more details: https://github.com/microcks/.github/issues/16
 jobs:
 
+  # Set environment variables for all repositories concerned by this global workflow
+  set-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Delivered Components, Demonstrations, Documentation, Community resources and excluded archived repositories
+        run: |
+          echo "DELIVERED_COMPONENTS=microcks,microcks-cli,microcks-operator,microcks-ansible-operator,microcks-postman-runtime,microcks-testcontainers-java,microcks-testcontainers-go,microcks-testcontainers-node,microcks-quarkus,microcks-java-client,microcks-go-client,microcks-docker-desktop-extension,microcks-backstage-provider,microcks-jenkins-plugin,microcks-spectral-ruleset,import-github-action,test-github-action,hub.microcks.io" >> $GITHUB_ENV
+          echo "DEMONSTRATIONS=microcks-testcontainers-java-spring-demo,microcks-testcontainers-node-nest-demo,microcks-testcontainers-go-demo,api-lifecycle,api-tooling" >> $GITHUB_ENV
+          echo "DOCUMENTATION=microcks.io" >> $GITHUB_ENV
+          echo "COMMUNITY_RESOURCES=.github,community,microcks-quickstarters,community-mocks" >> $GITHUB_ENV
+          echo "EXCLUDED_ARCHIVED_REPOS=microcks-keycloak,microcks-go-operator,microcks-azure" >> $GITHUB_ENV
+
   # Replicate .github/CODE_OF_CONDUCT.md file in all repositories
   replicate_coc:
     if: startsWith(github.repository, 'microcks/')
@@ -35,6 +47,7 @@ jobs:
           patterns_to_include: CODE_OF_CONDUCT.md
           exclude_private: true
           exclude_forked: true
+          repos_to_ignore: ${{ env.EXCLUDED_ARCHIVED_REPOS }}
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
@@ -56,7 +69,8 @@ jobs:
           patterns_to_include: ADOPTERS.md
           exclude_private: true
           exclude_forked: true
-          repos_to_ignore: microcks-testcontainers-java-spring-demo,microcks-testcontainers-node-nest-demo,microcks-testcontainers-go-demo,api-lifecycle,api-tooling,microcks.io
+          repos_to_ignore: "${{ env.EXCLUDED_ARCHIVED_REPOS }},${{ env.DEMONSTRATIONS }},${{ env.DOCUMENTATION }}"
+          #repos_to_ignore: microcks-testcontainers-java-spring-demo,microcks-testcontainers-node-nest-demo,microcks-testcontainers-go-demo,api-lifecycle,api-tooling,microcks.io
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
