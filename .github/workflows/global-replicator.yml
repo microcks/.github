@@ -69,7 +69,7 @@ jobs:
           patterns_to_include: ADOPTERS.md
           exclude_private: true
           exclude_forked: true
-          repos_to_ignore: ${{ env.EXCLUDED_ARCHIVED_REPOS }},${{ env.DEMONSTRATIONS }},${{ env.DOCUMENTATION }}
+          repos_to_ignore: "${{ env.EXCLUDED_ARCHIVED_REPOS }},${{ env.DEMONSTRATIONS }},${{ env.DOCUMENTATION }}
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
