@@ -36,7 +36,7 @@ jobs:
           
           # Concatenate environment variables to ignore and assign them to CODE_OF_CONDUCT
           echo "CODE_OF_CONDUCT=$EXCLUDED_ARCHIVED_REPOS" >> $GITHUB_ENV
-          
+
           # Concatenate environment variables to ignore and assign them to ADOPTERS
           echo "ADOPTERS=$EXCLUDED_ARCHIVED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION" >> $GITHUB_ENV
 
@@ -77,7 +77,7 @@ jobs:
           patterns_to_include: ADOPTERS.md
           exclude_private: true
           exclude_forked: true
-          repos_to_ignore: echo "${{ env.ADOPTERS }}"
+          repos_to_ignore: "${{ env.ADOPTERS }}"
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
