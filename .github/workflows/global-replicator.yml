@@ -60,7 +60,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update of files from global .github repo 
+            ci: update CODE_OF_CONDUCT.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/ADOPTERS file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
@@ -82,5 +82,5 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update of files from global .github repo 
+            ci: update ADOPTERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
