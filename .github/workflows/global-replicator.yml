@@ -160,7 +160,7 @@ jobs:
   # Replicate .github/GOVERNANCE file in all repositories concerned as described here:
   replicate_governance:
     if: startsWith(github.repository, 'microcks/')
-    name: Replicate Changelog file in all repositories concerned
+    name: Replicate Governance file in all repositories concerned
     runs-on: ubuntu-latest
     needs: set-env
     steps:
