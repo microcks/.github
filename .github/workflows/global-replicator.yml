@@ -18,11 +18,15 @@ on:
         required: false
 
 jobs:
-
+  # Set environment variables for all repositories concerned by this global workflow
   set-env:
     runs-on: ubuntu-latest
+    outputs:
+      CODE_OF_CONDUCT: ${{ steps.step-set-env.outputs.CODE_OF_CONDUCT }}
+      ADOPTERS: ${{ steps.step-set-env.outputs.ADOPTERS }}
+      ROADMAP: ${{ steps.step-set-env.outputs.ROADMAP }}
     steps:
-      - name: Set Delivered Components, Demonstrations, Documentation, Community resources and excluded archived repositories
+      - id: step-set-env
         run: |
           # Define environment variables for all repositories concerned by this global workflow
           DELIVERED_COMPONENTS="microcks,microcks-cli,microcks-operator,microcks-ansible-operator,microcks-postman-runtime,microcks-testcontainers-java,microcks-testcontainers-go,microcks-testcontainers-node,microcks-quarkus,microcks-java-client,microcks-go-client,microcks-docker-desktop-extension,microcks-backstage-provider,microcks-jenkins-plugin,microcks-spectral-ruleset,import-github-action,test-github-action,hub.microcks.io"
@@ -36,16 +40,20 @@ jobs:
           # See this issue for more details: https://github.com/microcks/.github/issues/16
           
           # Concatenate environment variables to ignore and assign them to CODE_OF_CONDUCT
-          echo "CODE_OF_CONDUCT=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> $GITHUB_ENV
+          echo "CODE_OF_CONDUCT=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
 
           # Concatenate environment variables to ignore and assign them to ADOPTERS
-          echo "ADOPTERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION" >> $GITHUB_ENV
+          echo "ADOPTERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION" >> "$GITHUB_OUTPUT"
+
+          # Concatenate environment variables to ignore and assign them to ROADMAP
+          echo "ROADMAP=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION,$COMMUNITY_RESOURCES" >> "$GITHUB_OUTPUT"
 
   # Replicate .github/CODE_OF_CONDUCT.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
   replicate_coc:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Code of Conduct in all repositories
     runs-on: ubuntu-latest
+    needs: set-env
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -56,7 +64,7 @@ jobs:
           patterns_to_include: CODE_OF_CONDUCT.md
           exclude_private: true
           exclude_forked: true
-          repos_to_ignore: ${{ env.CODE_OF_CONDUCT }}
+          repos_to_ignore: ${{needs.set-env.outputs.CODE_OF_CONDUCT}}
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
@@ -68,6 +76,7 @@ jobs:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Adopters public list file in all repositories concerned
     runs-on: ubuntu-latest
+    needs: set-env
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -78,9 +87,32 @@ jobs:
           patterns_to_include: ADOPTERS.md
           exclude_private: true
           exclude_forked: true
-          repos_to_ignore: ${{ env.ADOPTERS }}
+          repos_to_ignore: ${{needs.set-env.outputs.ADOPTERS}}
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
             ci: update ADOPTERS.md from global .github repo 
+            Signed-off-by: microcks-bot <info@microcks.io>
+
+  # Replicate .github/ROADMAP file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
+  replicate_roadmap:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Roadmap public list file in all repositories concerned
+    runs-on: ubuntu-latest
+    needs: set-env
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        with:
+          github_token: ${{ secrets.BOT_GH_TOKEN }}
+          patterns_to_include: ROADMAP.md
+          exclude_private: true
+          exclude_forked: true
+          repos_to_ignore: ${{needs.set-env.outputs.ROADMAP}}
+          committer_username: microcks-bot
+          committer_email: info@microcks.io
+          commit_message: |
+            ci: update ROADMAP.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
