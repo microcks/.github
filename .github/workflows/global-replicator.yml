@@ -29,6 +29,7 @@ jobs:
       GOVERNANCE: ${{ steps.step-set-env.outputs.GOVERNANCE }}
       STALE-ISSUES: ${{ steps.step-set-env.outputs.STALE-ISSUES }}
       CONTRIBUTING: ${{ steps.step-set-env.outputs.CONTRIBUTING }}
+      MAINTAINERS: ${{ steps.step-set-env.outputs.MAINTAINERS }}
     steps:
       - id: step-set-env
         run: |
@@ -64,6 +65,8 @@ jobs:
           # Concatenate environment variables to ignore and assign them to CONTRIBUTING
           echo "CONTRIBUTING=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS" >> "$GITHUB_OUTPUT"
 
+           # Concatenate environment variables to ignore and assign them to MAINTAINERS
+          echo "MAINTAINERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
 
   # Replicate .github/CODE_OF_CONDUCT.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
   replicate_coc:
@@ -224,4 +227,27 @@ jobs:
           committer_email: info@microcks.io
           commit_message: |
             ci: update CONTRIBUTING workflow from global .github repo 
+            Signed-off-by: microcks-bot <info@microcks.io>
+
+  # Replicate .github/MAINTAINERS.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
+  replicate_maintainers:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Code of Conduct in all repositories
+    runs-on: ubuntu-latest
+    needs: set-env
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        with:
+          github_token: ${{ secrets.BOT_GH_TOKEN }}
+          patterns_to_include: MAINTAINERS.md
+          exclude_private: true
+          exclude_forked: true
+          repos_to_ignore: ${{needs.set-env.outputs.MAINTAINERS}}
+          committer_username: microcks-bot
+          committer_email: info@microcks.io
+          commit_message: |
+            ci: update MAINTAINERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
