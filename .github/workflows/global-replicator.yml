@@ -251,3 +251,26 @@ jobs:
           commit_message: |
             ci: update MAINTAINERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
+  
+  # Replicate .github/DEPENDENCY_POLICY.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
+  replicate_dependency_policy:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Dependency Policy in all repositories
+    runs-on: ubuntu-latest
+    needs: set-env
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        with:
+          github_token: ${{ secrets.BOT_GH_TOKEN }}
+          patterns_to_include: DEPENDENCY_POLICY.md
+          exclude_private: true
+          exclude_forked: true
+          repos_to_ignore: ${{needs.set-env.outputs.MAINTAINERS}}
+          committer_username: microcks-bot
+          committer_email: info@microcks.io
+          commit_message: |
+            ci: update DEPENDENCY_POLICY.md from global .github repo 
+            Signed-off-by: microcks-bot <info@microcks.io>
