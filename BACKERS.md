@@ -35,6 +35,7 @@ If you'd like to help and support Microcks to [level up](https://www.cncf.io/pro
 ## Bronze Sponsors
 [image width="150"]: #
 <p align="center">
+  <a href="https://bitso.com/"><img src="https://logowik.com/content/uploads/images/bitso5417.jpg" alt="Bitso logo" width="120"></a>
   <a href="https://www.devmark.ai/fern/?utm_source=microcks&utm_loc=readme&utm_type=logo"><img src="https://uploads-ssl.webflow.com/64f77a831b9d50c279dc926c/6568d0303c2a1435c108e114_fern.svg" alt="Fern logo" width="150"></a>
 </p>
 
