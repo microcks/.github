@@ -24,6 +24,7 @@ jobs:
     outputs:
       CODE_OF_CONDUCT: ${{ steps.step-set-env.outputs.CODE_OF_CONDUCT }}
       ADOPTERS: ${{ steps.step-set-env.outputs.ADOPTERS }}
+      BACKERS: ${{ steps.step-set-env.outputs.BACKERS }}
       ROADMAP: ${{ steps.step-set-env.outputs.ROADMAP }}
       CHANGELOG: ${{ steps.step-set-env.outputs.CHANGELOG }}
       GOVERNANCE: ${{ steps.step-set-env.outputs.GOVERNANCE }}
@@ -47,8 +48,9 @@ jobs:
           # Concatenate environment variables to ignore and assign them to CODE_OF_CONDUCT
           echo "CODE_OF_CONDUCT=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
 
-          # Concatenate environment variables to ignore and assign them to ADOPTERS
+          # Concatenate environment variables to ignore and assign them to ADOPTERS & BACKERS
           echo "ADOPTERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION" >> "$GITHUB_OUTPUT"
+          echo "BACKERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION" >> "$GITHUB_OUTPUT"
 
           # Concatenate environment variables to ignore and assign them to ROADMAP
           echo "ROADMAP=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION,$COMMUNITY_RESOURCES" >> "$GITHUB_OUTPUT"
@@ -112,6 +114,29 @@ jobs:
           committer_email: info@microcks.io
           commit_message: |
             ci: update ADOPTERS.md from global .github repo 
+            Signed-off-by: microcks-bot <info@microcks.io>
+
+  # Replicate .github/BACKERS file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
+  replicate_backers:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Backers public list file in all repositories concerned
+    runs-on: ubuntu-latest
+    needs: set-env
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        with:
+          github_token: ${{ secrets.BOT_GH_TOKEN }}
+          patterns_to_include: BACKERS.md
+          exclude_private: true
+          exclude_forked: true
+          repos_to_ignore: ${{needs.set-env.outputs.BACKERS}}
+          committer_username: microcks-bot
+          committer_email: info@microcks.io
+          commit_message: |
+            ci: update BACKERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/ROADMAP file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
