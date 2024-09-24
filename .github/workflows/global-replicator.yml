@@ -31,6 +31,7 @@ jobs:
       STALE-ISSUES: ${{ steps.step-set-env.outputs.STALE-ISSUES }}
       CONTRIBUTING: ${{ steps.step-set-env.outputs.CONTRIBUTING }}
       MAINTAINERS: ${{ steps.step-set-env.outputs.MAINTAINERS }}
+      DEPENDENCY_POLICY: ${{ steps.step-set-env.outputs.DEPENDENCY_POLICY }}
     steps:
       - id: step-set-env
         run: |
@@ -69,6 +70,9 @@ jobs:
 
            # Concatenate environment variables to ignore and assign them to MAINTAINERS
           echo "MAINTAINERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
+
+          # Concatenate environment variables to ignore and assign them to DEPENDENCY_POLICY
+          echo "DEPENDENCY_POLICY=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION,$COMMUNITY_RESOURCES" >> "$GITHUB_OUTPUT"
 
   # Replicate .github/CODE_OF_CONDUCT.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
   replicate_coc:
@@ -293,7 +297,7 @@ jobs:
           patterns_to_include: DEPENDENCY_POLICY.md
           exclude_private: true
           exclude_forked: true
-          repos_to_ignore: ${{needs.set-env.outputs.MAINTAINERS}}
+          repos_to_ignore: ${{needs.set-env.outputs.DEPENDENCY_POLICY}}
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
