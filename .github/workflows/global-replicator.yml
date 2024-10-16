@@ -98,7 +98,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update CODE_OF_CONDUCT.md from global .github repo 
+            chore: update CODE_OF_CONDUCT.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/ADOPTERS file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
@@ -121,7 +121,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update ADOPTERS.md from global .github repo 
+            chore: update ADOPTERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/BACKERS file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
@@ -144,7 +144,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update BACKERS.md from global .github repo 
+            chore: update BACKERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/ROADMAP file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
@@ -167,7 +167,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update ROADMAP.md from global .github repo 
+            chore: update ROADMAP.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/CHANGELOG file in all repositories concerned as described here:
@@ -190,7 +190,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update CHANGELOG.md from global .github repo 
+            chore: update CHANGELOG.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/GOVERNANCE file in all repositories concerned as described here:
@@ -213,7 +213,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update GOVERNANCE.md from global .github repo 
+            chore: update GOVERNANCE.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/STALE-ISSUES file in all repositories concerned as described here:
@@ -259,7 +259,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update CONTRIBUTING workflow from global .github repo 
+            chore: update CONTRIBUTING workflow from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/MAINTAINERS.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
@@ -282,7 +282,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update MAINTAINERS.md from global .github repo 
+            chore: update MAINTAINERS.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
   
   # Replicate .github/DEPENDENCY_POLICY.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
@@ -305,7 +305,7 @@ jobs:
           committer_username: microcks-bot
           committer_email: info@microcks.io
           commit_message: |
-            ci: update DEPENDENCY_POLICY.md from global .github repo 
+            chore: update DEPENDENCY_POLICY.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/WELCOME-NEW-USERS.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
