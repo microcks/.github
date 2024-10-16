@@ -32,6 +32,7 @@ jobs:
       CONTRIBUTING: ${{ steps.step-set-env.outputs.CONTRIBUTING }}
       MAINTAINERS: ${{ steps.step-set-env.outputs.MAINTAINERS }}
       DEPENDENCY_POLICY: ${{ steps.step-set-env.outputs.DEPENDENCY_POLICY }}
+      WELCOME-NEW-USERS: ${{ steps.step-set-env.outputs.WELCOME-NEW-USERS }}  
     steps:
       - id: step-set-env
         run: |
@@ -73,6 +74,9 @@ jobs:
 
           # Concatenate environment variables to ignore and assign them to DEPENDENCY_POLICY
           echo "DEPENDENCY_POLICY=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION,$COMMUNITY_RESOURCES" >> "$GITHUB_OUTPUT"
+
+          # Concatenate environment variables to ignore and assign them to WELOME-NEW-USERS
+          ecgo "WELCOME-NEW-USERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
 
   # Replicate .github/CODE_OF_CONDUCT.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
   replicate_coc:
@@ -302,4 +306,27 @@ jobs:
           committer_email: info@microcks.io
           commit_message: |
             ci: update DEPENDENCY_POLICY.md from global .github repo 
+            Signed-off-by: microcks-bot <info@microcks.io>
+
+  # Replicate .github/WELCOME-NEW-USERS.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
+  replicate_welcome_new_users:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Welcome New Users file in all repositories concerned
+    runs-on: ubuntu-latest
+    needs: set-env
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        with:
+          github_token: ${{ secrets.BOT_GH_TOKEN }}
+          patterns_to_include: .github/workflows/welcome-new-users.yml
+          exclude_private: true
+          exclude_forked: true
+          repos_to_ignore: ${{needs.set-env.outputs.WELCOME-NEW-USERS}}
+          committer_username: microcks-bot
+          committer_email: info@microcks.io
+          commit_message: |
+            ci: update WELCOME-NEW-USERS workflow from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
