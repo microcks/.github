@@ -76,7 +76,7 @@ jobs:
           echo "DEPENDENCY_POLICY=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION,$COMMUNITY_RESOURCES" >> "$GITHUB_OUTPUT"
 
           # Concatenate environment variables to ignore and assign them to WELOME-NEW-USERS
-          ecgo "WELCOME-NEW-USERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
+          echo "WELCOME-NEW-USERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
 
   # Replicate .github/CODE_OF_CONDUCT.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
   replicate_coc:
