@@ -35,9 +35,11 @@ If you need to know why and how to add yourself to the list, please read the blo
 
 ## 🌎 Join Microcks community
 
-We are an open community, which means that you can join the cause and make Microcks even greater! 
+We are an open community, meaning you can join the cause and make Microcks even greater! 
 
 We will be eager to prioritize items according to community feedback: you can check and collaborate via our list of [issues](https://github.com/microcks/microcks/issues) on GitHub.
+
+Join our [monthly Open Community Meetings](https://github.com/microcks/community?tab=readme-ov-file#community-meetings), held bi-weekly to accommodate different regions and be globally accessible.
 
 Come and say hi! on our [Github discussion](https://github.com/microcks/microcks/discussions) or [Discord](https://microcks.io/discord-invite) chat 💬, simply send some love through [GitHub stars](https://github.com/microcks/microcks) ⭐️ or follow us on [Twitter](https://twitter.com/microcksio), [LinkedIn](https://www.linkedin.com/company/microcks/) and our [YouTube channel](https://www.youtube.com/c/Microcks) !
 
