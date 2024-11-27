@@ -1,0 +1,11 @@
+# Dependabot config for .github repo
+
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      day: sunday
+    open-pull-requests-limit: 3
+    rebase-strategy: disabled
