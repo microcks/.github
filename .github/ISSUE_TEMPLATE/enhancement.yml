@@ -8,7 +8,7 @@ body:
     attributes:
       label: Reason/Context
       description: >-
-        Please try ansmering few of those questions:
+        Please try answering a few of those questions:
           * Why we need this improvement?
           * How will this change help?
           * What is the motivation?
