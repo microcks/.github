@@ -1,6 +1,6 @@
 name: Bug report
 description: Report a bug in Microcks
-labels: kind/bug
+labels: "kind/bug"
 body:
   - type: textarea
     validations:
