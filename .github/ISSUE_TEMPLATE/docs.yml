@@ -1,6 +1,6 @@
 name: Docs enhancement
 description: Report missing or mistakes in docs.
-labels: "component/documention"
+labels: "component/documentation"
 body:
   - type: textarea
     id: describe
