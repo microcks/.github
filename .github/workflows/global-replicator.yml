@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       CODE_OF_CONDUCT: ${{ steps.step-set-env.outputs.CODE_OF_CONDUCT }}
+      SECURITY: ${{ steps.step-set-env.outputs.SECURITY }}
       ADOPTERS: ${{ steps.step-set-env.outputs.ADOPTERS }}
       BACKERS: ${{ steps.step-set-env.outputs.BACKERS }}
       ROADMAP: ${{ steps.step-set-env.outputs.ROADMAP }}
@@ -47,8 +48,9 @@ jobs:
           # Set environment variables for all repositories concerned by this global workflow
           # See this issue for more details: https://github.com/microcks/.github/issues/16
           
-          # Concatenate environment variables to ignore and assign them to CODE_OF_CONDUCT
+          # Concatenate environment variables to ignore and assign them to CODE_OF_CONDUCT & SECURITY
           echo "CODE_OF_CONDUCT=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
+          echo "SECURITY=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
 
           # Concatenate environment variables to ignore and assign them to ADOPTERS & BACKERS
           echo "ADOPTERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION" >> "$GITHUB_OUTPUT"
@@ -99,6 +101,29 @@ jobs:
           committer_email: info@microcks.io
           commit_message: |
             chore: update CODE_OF_CONDUCT.md from global .github repo 
+            Signed-off-by: microcks-bot <info@microcks.io>
+
+  # Replicate .github/SECURITY.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
+  replicate_coc:
+    if: startsWith(github.repository, 'microcks/')
+    name: Replicate Security in all repositories
+    runs-on: ubuntu-latest
+    needs: set-env
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        with:
+          github_token: ${{ secrets.BOT_GH_TOKEN }}
+          patterns_to_include: SECURITY.md
+          exclude_private: true
+          exclude_forked: true
+          repos_to_ignore: ${{needs.set-env.outputs.SECURITY}}
+          committer_username: microcks-bot
+          committer_email: info@microcks.io
+          commit_message: |
+            chore: update SECURITY.md from global .github repo 
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/ADOPTERS file in all repositories concerned as described here: https://github.com/microcks/.github/issues/16
