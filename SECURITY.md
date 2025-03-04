@@ -14,7 +14,7 @@ We prefer to fully disclose the bug as soon as possible once a user mitigation i
 
 Microcks releases follow the [semver](https://semver.org/) specification. Security fixes are typically merged into the current development branch and are due for release in the next minor version. We may create a fix release upon request or, if deemed necessary, as part of a critical security fix.
 
-## Security Team Membership
+## Security Team
 
 The security team is made up of a subset of the project [maintainers](https://github.com/microcks/.github/blob/main/GOVERNANCE.md#maintainers-code-owners-contributors-and-adopters) and [code owners](https://github.com/microcks/.github/blob/main/GOVERNANCE.md#maintainers-code-owners-contributors-and-adopters) who are willing and able to respond to vulnerability reports.
 
