@@ -104,7 +104,7 @@ jobs:
             Signed-off-by: microcks-bot <info@microcks.io>
 
   # Replicate .github/SECURITY.md file in all repositories as described here: https://github.com/microcks/.github/issues/16
-  replicate_coc:
+  replicate_security:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Security in all repositories
     runs-on: ubuntu-latest
