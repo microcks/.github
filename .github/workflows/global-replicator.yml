@@ -44,6 +44,7 @@ jobs:
           COMMUNITY_RESOURCES=".github,community,microcks-quickstarters,community-mocks"
           EXCLUDED_ARCHIVED_REPOS="microcks-keycloak,microcks-go-operator,microcks-azure"
           EXCLUDED_REPOS="microcks.github.io"
+          EXCLUDE_MAIN="microcks"
           
           # Set environment variables for all repositories concerned by this global workflow
           # See this issue for more details: https://github.com/microcks/.github/issues/16
@@ -69,7 +70,7 @@ jobs:
           echo "STALE-ISSUES=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS,$DOCUMENTATION,$COMMUNITY_RESOURCES" >> "$GITHUB_OUTPUT"
 
           # Concatenate environment variables to ignore and assign them to CONTRIBUTING
-          echo "CONTRIBUTING=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS" >> "$GITHUB_OUTPUT"
+          echo "CONTRIBUTING=$EXCLUDE_MAIN,$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS,$DEMONSTRATIONS" >> "$GITHUB_OUTPUT"
 
            # Concatenate environment variables to ignore and assign them to MAINTAINERS
           echo "MAINTAINERS=$EXCLUDED_ARCHIVED_REPOS,$EXCLUDED_REPOS" >> "$GITHUB_OUTPUT"
