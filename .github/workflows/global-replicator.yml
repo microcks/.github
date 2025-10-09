@@ -39,7 +39,7 @@ jobs:
         run: |
           # Define environment variables for all repositories concerned by this global workflow
           DELIVERED_COMPONENTS="microcks,microcks-cli,microcks-operator,microcks-ansible-operator,microcks-postman-runtime,microcks-testcontainers-java,microcks-testcontainers-go,microcks-testcontainers-node,microcks-quarkus,microcks-java-client,microcks-go-client,microcks-docker-desktop-extension,microcks-backstage-provider,microcks-jenkins-plugin,microcks-spectral-ruleset,import-github-action,test-github-action,hub.microcks.io"
-          DEMONSTRATIONS="microcks-testcontainers-java-spring-demo,microcks-testcontainers-node-nest-demo,microcks-testcontainers-go-demo,api-lifecycle,api-tooling"
+          DEMONSTRATIONS="microcks-testcontainers-java-spring-demo,microcks-testcontainers-node-nest-demo,microcks-testcontainers-go-demo,api-lifecycle,api-tooling,microcks-testcontainers-dotnet-demo"
           DOCUMENTATION="microcks.io"
           COMMUNITY_RESOURCES=".github,community,microcks-quickstarters,community-mocks"
           EXCLUDED_ARCHIVED_REPOS="microcks-keycloak,microcks-go-operator,microcks-azure"
