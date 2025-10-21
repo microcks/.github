@@ -43,7 +43,7 @@ jobs:
           DOCUMENTATION="microcks.io"
           COMMUNITY_RESOURCES=".github,community,microcks-quickstarters,community-mocks"
           EXCLUDED_ARCHIVED_REPOS="microcks-keycloak,microcks-go-operator,microcks-azure"
-          EXCLUDED_REPOS="microcks.github.io"
+          EXCLUDED_REPOS="microcks.github.io,microcks-images"
           
           # Set environment variables for all repositories concerned by this global workflow
           # See this issue for more details: https://github.com/microcks/.github/issues/16
