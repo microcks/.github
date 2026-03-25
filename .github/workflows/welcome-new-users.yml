@@ -46,7 +46,7 @@ jobs:
     if: github.event_name == 'pull_request' && github.event.action == 'opened'
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
+      issues: write
     steps:
       - uses: wow-actions/welcome@68019c2c271561f63162fea75bb7707ef8a02c85 # To pin v1.3.1
         with:
@@ -64,7 +64,7 @@ jobs:
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
+      issues: write
     steps:
       - uses: wow-actions/welcome@68019c2c271561f63162fea75bb7707ef8a02c85 # To pin v1.3.1
         with:
