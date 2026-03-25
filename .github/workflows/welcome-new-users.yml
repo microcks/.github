@@ -46,7 +46,7 @@ jobs:
             🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact.
 
   welcome-pr-opened:
-  if: github.event_name == 'pull_request_target' && github.event.action == 'opened'
+    if: github.event_name == 'pull_request_target' && github.event.action == 'opened'
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -64,7 +64,7 @@ jobs:
             Hope you have a great time there! 
 
   welcome-pr-merged:
-  if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       issues: write
