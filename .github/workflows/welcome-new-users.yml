@@ -61,7 +61,7 @@ jobs:
             
             Thanks and congrats 🎉 for opening your first pull request here! Be sure to follow the pull request template or please update it accordingly.
             
-            Hope you have a great time there! 
+            Hope you have a great time there!
 
   welcome-pr-merged:
     if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
