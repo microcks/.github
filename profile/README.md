@@ -13,7 +13,7 @@
 ## ✨ Welcome to Microcks,
 
 The open source, cloud native tool for API Mocking and Testing.
-[Microcks](https://microcks.io/) is a [Cloud Native Computing Foundation Sandbox](https://landscape.cncf.io/card-mode?selected=microcks) project 🚀
+[Microcks](https://microcks.io/) is a [Cloud Native Computing Foundation Incubating](https://landscape.cncf.io/?item=app-definition-and-development--application-definition-image-build--microcks) project 🚀
 
 As numerous API styles and protocols coexist, there is a need for a uniform way to accelerate and secure their delivery! Our objective is to establish Microcks as the de-facto standard tool for delivering this unified approach [the open source way](https://www.theopensourceway.org/) 🙌
 
