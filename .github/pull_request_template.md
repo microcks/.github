@@ -18,7 +18,7 @@ Please ensure your pull request adheres to the following guidelines:
 - [ ] All code is covered by tests where feasible.
 - [ ] All commits follow the [conventional commits](https://www.conventionalcommits.org/) specification.
 - [ ] I have updated the relevant documentation.
-- [ ] If used or assisted by any Gen AI tool for this PR, I have disclosed it and adhered to the [AI Contribution Policy](../AI-POLICY.md).
+- [ ] If any Gen AI tool was used or assisted in this PR, I have described its usage in the PR description and adhered to the [AI Contribution Policy](../AI-POLICY.md).
 
 ### Related issue(s)
 
