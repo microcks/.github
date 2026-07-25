@@ -18,9 +18,14 @@ Please ensure your pull request adheres to the following guidelines:
 - [ ] All code is covered by tests where feasible.
 - [ ] All commits follow the [conventional commits](https://www.conventionalcommits.org/) specification.
 - [ ] I have updated the relevant documentation.
-- [ ] If any Gen AI tool was used or assisted in this PR, I have described its usage in the PR description and adhered to the [AI Contribution Policy](../AI-POLICY.md).
+- [ ] This PR changes GitHub Actions permissions, adds an unpinned action, or edits agent instruction files (`AGENTS.md`, `CLAUDE.md`). If checked, explain why above.
+
+**Gen AI usage (Check exactly one):**
+Please adhere to the [AI Contribution Policy](../AI-POLICY.md) regarding any AI assistance.
+- [ ] No Gen AI tool was used for this contribution.
+- [ ] Gen AI tool was used. Tool(s) and role: <!-- e.g. "Copilot for test scaffolding, reviewed and rewritten by hand" -->
 
 ### Related issue(s)
-
+Fixes #
 <!-- If you refer to a particular issue, provide its number, otherwise, remove this section.
 For example, `Resolves #123`, `Fixes #43`, or `See also #33`. The `See also #33` option will not automatically close the issue after the PR merge. -->
