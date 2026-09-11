@@ -2,7 +2,7 @@
 
 This document is the canonical inventory of public, first-party repositories owned by the [Microcks GitHub organization](https://github.com/microcks). It records repository purpose, lifecycle status and responsible ownership without treating external forks, private repositories or every repository as a governed subproject.
 
-Last reviewed: 2026-09-09
+**Last reviewed:** September 09, 2026
 
 ## Scope and ownership
 
