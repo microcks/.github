@@ -95,7 +95,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: CODE_OF_CONDUCT.md
@@ -118,7 +118,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: SECURITY.md
@@ -141,7 +141,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: ADOPTERS.md
@@ -164,7 +164,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: BACKERS.md
@@ -187,7 +187,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: ROADMAP.md
@@ -210,7 +210,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: CHANGELOG.md
@@ -233,7 +233,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: GOVERNANCE.md
@@ -256,7 +256,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: .github/workflows/stale-issues-prs.yml
@@ -279,7 +279,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: CONTRIBUTING.md
@@ -302,7 +302,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: AI-POLICY.md
@@ -325,7 +325,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: MAINTAINERS.md
@@ -348,7 +348,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: DEPENDENCY_POLICY.md
@@ -371,7 +371,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Replicating file
-        uses: derberg/manage-files-in-multiple-repositories@beecbe897cf5ed7f3de5a791a3f2d70102fe7c25
+        uses: derberg/manage-files-in-multiple-repositories@b64d9c8480606c15f957cdda078f0122815512b8 # v3.1.2
         with:
           github_token: ${{ secrets.BOT_GH_TOKEN }}
           patterns_to_include: .github/workflows/welcome-new-users.yml
