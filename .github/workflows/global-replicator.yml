@@ -20,7 +20,7 @@ on:
 jobs:
   # Set environment variables for all repositories concerned by this global workflow
   set-env:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     outputs:
       CODE_OF_CONDUCT: ${{ steps.step-set-env.outputs.CODE_OF_CONDUCT }}
       SECURITY: ${{ steps.step-set-env.outputs.SECURITY }}
@@ -89,7 +89,7 @@ jobs:
   replicate_coc:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Code of Conduct in all repositories
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -112,7 +112,7 @@ jobs:
   replicate_security:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Security in all repositories
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -135,7 +135,7 @@ jobs:
   replicate_adopters:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Adopters public list file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -158,7 +158,7 @@ jobs:
   replicate_backers:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Backers public list file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -181,7 +181,7 @@ jobs:
   replicate_roadmap:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Roadmap file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -204,7 +204,7 @@ jobs:
   replicate_changelog:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Changelog file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -227,7 +227,7 @@ jobs:
   replicate_governance:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Governance file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -250,7 +250,7 @@ jobs:
   replicate_stale_issues:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Stale issues file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -273,7 +273,7 @@ jobs:
   replicate_contributing:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Contributing file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -296,7 +296,7 @@ jobs:
   replicate_ai_policy:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate AI Policy file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -319,7 +319,7 @@ jobs:
   replicate_maintainers:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Maintainers in all repositories
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -342,7 +342,7 @@ jobs:
   replicate_dependency_policy:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Dependency Policy in all repositories
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
@@ -365,7 +365,7 @@ jobs:
   replicate_welcome_new_users:
     if: startsWith(github.repository, 'microcks/')
     name: Replicate Welcome New Users file in all repositories concerned
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     needs: set-env
     steps:
       - name: Checkout repository
