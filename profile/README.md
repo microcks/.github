@@ -19,7 +19,7 @@ As numerous API styles and protocols coexist, there is a need for a uniform way 
 
 > 💡 **From day one, Microcks had the vision of a multi-protocol API ecosystem due to the ubiquitous nature of API. This is especially true at the enterprise level where the technology strata are built over the years.**
 
-The most important aspect is testing your APIs consistently using [OpenAPI](https://microcks.io/documentation/using/openapi/), [AsyncAPI](https://microcks.io/documentation/using/asyncapi/), [SoapUI](https://microcks.io/documentation/using/soapui/), and [Postman Collections](https://microcks.io/documentation/using/postman/) across web, [gRPC](https://microcks.io/documentation/using/grpc/), [WebSockets](https://websockets.spec.whatwg.org/#the-websocket-interface), [GraphQL](https://microcks.io/documentation/using/graphql/), [Kafka](https://microcks.io/blog/apache-kafka-mocking-testing/), [NATS](https://microcks.io/documentation/guides/nats-support/), [RabbitMQ](https://microcks.io/documentation/guides/rabbitmq-support/), [MQTT](https://microcks.io/documentation/guides/mqtt-support/), Google [PubSub](https://microcks.io/documentation/guides/googlepubsub-support/), Amazon [SQS/SNS](https://microcks.io/documentation/guides/aws-sqs-sns-support/) and other popular patterns and protocols of your API lifecycle.
+The most important aspect is testing your APIs consistently using [OpenAPI](https://microcks.io/documentation/tutorials/first-rest-mock/), [AsyncAPI](https://microcks.io/documentation/tutorials/first-asyncapi-mock/), [SoapUI](https://microcks.io/documentation/tutorials/first-soap-mock/), and [Postman Collections](https://microcks.io/documentation/references/artifacts/postman-conventions/) across web, [gRPC](https://microcks.io/documentation/tutorials/first-grpc-mock/), [WebSockets](https://websockets.spec.whatwg.org/#the-websocket-interface), [GraphQL](https://microcks.io/documentation/tutorials/first-graphql-mock/), [Kafka](https://microcks.io/blog/apache-kafka-mocking-testing/), [NATS](https://microcks.io/documentation/guides/usage/async-protocols/nats-support/), [RabbitMQ](https://microcks.io/documentation/guides/usage/async-protocols/rabbitmq-support/), [MQTT](https://microcks.io/documentation/guides/usage/async-protocols/mqtt-support/), Google [PubSub](https://microcks.io/documentation/guides/usage/async-protocols/googlepubsub-support/), Amazon [SQS/SNS](https://microcks.io/documentation/guides/usage/async-protocols/aws-sqs-sns-support/) and other popular patterns and protocols of your API lifecycle.
 
 Kudos to our awesome sponsors and backers. If you'd like to join them, please consider [sponsoring](https://opencollective.com/microcks) Microcks's development:
 
@@ -50,11 +50,11 @@ Wondering where to start first?
 > **⏩ Very easy and straightforward using [Docker Desktop Extension](https://microcks.io/documentation/guides/installation/docker-desktop-extension/)**
 
 But don't forget to check all the [documentation](https://microcks.io/documentation/) we are maintaining:  
-- [Quickstart](https://microcks.io/documentation/getting-started/) 👍
-- [Installing instructions](https://microcks.io/documentation/installing/), select four flavor 🚀
+- [Quickstart](https://microcks.io/documentation/tutorials/getting-started/) 👍
+- [Installing instructions](https://microcks.io/documentation/guides/installation/), select four flavor 🚀
 - Some [Guides](https://microcks.io/documentation/guides/) related to specific specs or protocols 🦮
-- [Automation](https://microcks.io/documentation/automating/) and your CI/CD pipelines/tools ✅
-- Users IAM / RBAC, secrets, check the [administration page](https://microcks.io/documentation/administrating/) 🔒
+- [Automation](https://microcks.io/documentation/guides/automation/) and your CI/CD pipelines/tools ✅
+- Users IAM / RBAC, secrets, check the [administration page](https://microcks.io/documentation/guides/administration/) 🔒
 - .../...
 
 📺 If you rather prefer to watch a video, check👇
